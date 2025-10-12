@@ -2,12 +2,12 @@
 layout: page
 title: Dynamic 7 Wonders rulebook
 permalink: /7wRulebook
-toc: true
-toc_stop_autofire: true
+toc: false
+toc_stop_autofire: false
 ---
 <script type="text/javascript">
 
-function toggleCL() {
+function toggleEd() {
   return toggle('#cylonleader');
 }
 
