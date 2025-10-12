@@ -5,7 +5,6 @@ permalink: /7wRulebook
 toc: true
 toc_stop_autofire: true
 ---
-
 <script type="text/javascript">
 
 function toggleCL() {
