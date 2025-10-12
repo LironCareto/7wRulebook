@@ -1,0 +1,12 @@
+# Site settings
+title: 7 Wonders Unified Rulebook
+email: lironliron@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A unified rulebook for 7 Wonders and its expansions. 
+baseurl: "/7wRulebook/" # the subpath of your site, e.g. /blog/
+url: "http://lironcareto.github.io" # the base hostname & protocol for your site
+#twitter_username: lironcareto
+#github_username:  lironcareto
+
+# Build settings
+markdown: kramdown
