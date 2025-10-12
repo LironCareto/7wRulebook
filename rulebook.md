@@ -1,5 +1,9 @@
 ---
 layout: page
+extra_meta: |
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
 title: Dynamic 7 Wonders rulebook
 permalink: /7wRulebook
 toc: false
