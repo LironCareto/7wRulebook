@@ -439,7 +439,7 @@ $(function () {
     </div>
     <label><input type="checkbox" name="babeledifice" id="edifice"> Edifice</label><br>
     <label><input type="checkbox" name="armada" id="armada"> Armada</label><br>
-    <div style="margin-left: 20px" class="siracusa">
+    <div style="margin-left: 20px" class="armada">
         <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
     </div>
     <label>Share this configuration: 
