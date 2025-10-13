@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Dynamic BSG rulebook
 toc: true
 toc_stop_autofire: true
