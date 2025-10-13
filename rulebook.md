@@ -449,7 +449,6 @@ $(function () {
         <legend>Configuration:</legend>
         <p>This link was pre-configured. <a href="{{_site.baseurl}}rulebook.html">
         Click here to go back to the configurable rulebook</a></p>
-
         <p>
         This configuration includes:</p>
         <ul>
