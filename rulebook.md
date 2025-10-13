@@ -439,7 +439,7 @@ $(function () {
             <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
         </div>
     <label>Share this configuration: 
-      <input style="width: 100%;" type="text" id="generatedUrl" name="generatedUrl" />
+      <input style="width: 100%;" type="text" id="generatedUrl" name="generatedUrl">
     </label>
   </fieldset>
 </form>
