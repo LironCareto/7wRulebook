@@ -79,6 +79,7 @@ function validateForm() {
   } else {
     enable('#allyseasons');
   }
+}
 
 function highlight(theClass) {
   // Don't highlight the "no" classes, except for "nosympathizer"
