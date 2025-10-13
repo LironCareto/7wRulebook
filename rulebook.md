@@ -177,9 +177,9 @@ function flipSwitches () {
   $(pullFrom).each(function(index, element) {
     if ($(this).is(':checked')) {
       showThese.push($(this).attr('id'));
-      hideThese.push('no'+$(this).attr('id'));
+      hideThese.push('no-'+$(this).attr('id'));
     } else {
-      showThese.push('no'+$(this).attr('id'));
+      showThese.push('no-'+$(this).attr('id'));
       hideThese.push($(this).attr('id'));
     }
   });  
@@ -202,7 +202,7 @@ function flipSwitches () {
     hideThese.push('execution');
   }
 
-  // Exodus loyalty if either:
+    // Exodus loyalty if either:
   //    Exodus is enabled, and hasn't been forced off
   //    Or we've forced Exodus rules to be on
   if ( (readCheckbox('#exodus') && ! readCheckbox('#forcepegasus'))
@@ -426,11 +426,11 @@ $(function () {
     <hr>
     <label><input type="checkbox" name="leaders" id="leaders"> Leaders</label><br>
     <div style="margin-left: 20px" class="leaders">
-        <label><input type="checkbox" name="leaders-anniversary">Leaders Anniversary Pack</label>
+        <label><input type="checkbox" name="leaders-anniversary" id="leaders-anniversary">Leaders Anniversary Pack</label>
     </div>
     <label><input type="checkbox" name="cities" id="cities"> Cities</label><br>
     <div style="margin-left: 20px" class="cities">
-        <label><input type="checkbox" name="cities-anniversary">Cities Anniversary Pack</label>
+        <label><input type="checkbox" name="cities-anniversary" id="cities-anniversary">Cities Anniversary Pack</label>
     </div>
     <label><input type="checkbox" name="babeledifice" id="babel"> Babel</label><br>
     <div style="margin-left: 20px" class="babel">
@@ -505,10 +505,9 @@ $(function () {
 <ol>
 	<li class="babel greatprojects">Check the completion status of the Great Project
 		<ul>
-			<li><strong>The Great Project is a success. </strong> If all participation tokens have been taken all players who participated gain as many reward tokens as they have participation tokens in their possession. The return tokens are returned to the supply. </li>
-			<li><strong>The Great Project is a failure. </strong>If there are remaining tokens on the Great Project card, those players without a participation token suffer the penalty displayed on the Great Project card. The return tokens are returned to the supply. </li>
-		</ul>
-		<p>If a player cannot pay the penalty, they must take a penalty token for value according to the Age (-1, -2, or -3). </p>
+			<li><strong>The Great Project is a success. </strong> If all participation tokens have been taken all players who participated gain as many reward tokens as they have participation tokens in their possession. The participation tokens are returned to the supply. </li>
+			<li><strong>The Great Project is a failure. </strong>If there are remaining tokens on the Great Project card, those players without a participation token suffer the penalty displayed on the Great Project card. The participation are returned to the supply. </li>
+		</ul>		
 	</li>
 	<li>Resolve <span class="no-armada">Military</span><span class="armada">Ground</span> Conflict. Award bonus and penalty points comparing your <span class="no-armada">military strength</span><span class="armada">Ground Shields</span> to your left and right neighbors'<span class="armada"> and players you've given an incursion token to (diplomacy tokens do not affect boarding tokens)</span>. In case of tie no one gets a bonus/penalty token. <span class="cities">If you have a diplomacy token, you do not participate in military conflicts and your neighbors to your left and right compare each other as if they were adjacent. Discard the diplomacy token after the resolution of all conflicts. </span>
   </li>
