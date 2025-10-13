@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Dynamic BSG rulebook
+title: Dynamic 7 Wonders rulebook
 toc: true
 toc_stop_autofire: true
 ---
 
 <script type="text/javascript">
 
-function toggleCL() {
+function toggleEd() {
   return toggle('#cylonleader');
 }
 
@@ -411,41 +411,33 @@ $(function () {
 <form id="configform" style="display: none;">
   <fieldset id="configbox">
     <legend>Configuration:</legend>
-    <label><input type="checkbox" name="pegasus" id="pegasus"> Pegasus</label><br>
-      <div style="margin-left: 20px" class="pegasus">
-        <label><input type="checkbox" name="forceexodus" id="forceexodus"> Variant: use "extra card" style Loyalty deck from Exodus</label>
-      </div>
-    <label><input type="checkbox" name="exodus" id="exodus"> Exodus</label><br>
-      <div style="margin-left: 20px" class="exodus">
-        <label><input type="checkbox" name="personalgoal" id="personalgoal"> Personal Goal cards</label><br>
-        <label><input type="checkbox" name="finalfive" id="finalfive"> Final Five cards</label><br>
-        <label><input type="checkbox" name="cylonfleet" id="cylonfleet"> Cylon Fleet board</label><br>
-        <label><input type="checkbox" name="allyseasons" id="allyseasons"> Variant: Allies for All Seasons</label><br>
-        <label><input type="checkbox" name="forcepegasus" id="forcepegasus"> Variant: use regular Loyalty Deck instead of "extra card"</label>
-      </div>
-    <label><input type="checkbox" name="daybreak" id="daybreak"> Daybreak</label><br>
-      <div style="margin-left: 20px" class="daybreak">
-        <label><input type="checkbox" name="forcedemetrius" id="forcedemetrius"> Variant: use the Demetrius board & Mission cards regardless of ending</label>
-      </div>
-    <label><input type="checkbox" name="cylonleader" id="cylonleader"> Cylon Leader chosen</label><br>
-    <label>Ending:
-      <select id="ending">
-        <option value="kobol" id="kobol" selected>Kobol</option>
-        <option value="newcaprica" id="newcaprica">New Caprica</option>
-        <option value="ioniannebula" id="ioniannebula">Ionian Nebula</option>
-        <option value="searchforhome" id="searchforhome">Search for Home (Earth)</option>
-        <option value="allendings" id="allendings">Variant: Show rules for ALL endings</option>
-      </select>
-    </label>
+    <form>
+        <label><input type="radio" name="1e" id="1e" /> 1st Edition</label>
+        <label><input type="radio" name="2e" id="2e" /> 2nd Edition</label>
+    </form>
     <hr>
-    <label><input type="checkbox" name="nosympathizer" id="nosympathizer"> Use official "No Sympathizer" variant</label><br>
-    <label><input type="checkbox" name="sympatheticcylon" id="sympatheticcylon"><span class="nopegasus"> Variant:</span> Use <span class="pegasus">official</span> "Sympathetic Cylon" variant <span class="nopegasus">without Pegasus</span></label><br>
-    <label><input type="checkbox" name="forceoverlay" id="forceoverlay"> Variant: Use a Cylon Locations overlay</label><br>
-    <label><input type="checkbox" name="forcemotive" id="forcemotive"> Variant: Replace Agenda cards with Motives from Daybreak</label><br>
-    <label><input type="checkbox" name="variants" id="variants"> Show other official game variants</label><br>
-    <label><input type="checkbox" name="help" id="help"> Show help</label><br>
-    <label><input type="checkbox" name="highlight" id="highlight"> Highlight modified rules</label><br>
+    <label><input type="checkbox" name="wonderpack" id="wonderpack"> Wonder Pack</label><br>
+    <label><input type="checkbox" name="catan" id="catan"> Catan Wonder</label><br>
     <hr>
+    <label><input type="checkbox" name="leaders" id="leaders"> Leaders</label><br>
+    <div style="margin-left: 20px" class="leaders">
+        <label><input type="checkbox" name="leaders-anniversary">Leaders Anniversary Pack</label>
+    </div>
+    <label><input type="checkbox" name="cities" id="cities"> Cities</label><br>
+    <div style="margin-left: 20px" class="cities">
+        <label><input type="checkbox" name="cities-anniversary">Cities Anniversary Pack</label>
+    </div>
+    <form>
+        <label><input type="radio" name="babel" id="babel"> Babel</label><br>
+        <div style="margin-left: 20px" class="babel">
+            <label><input type="checkbox" name="tower" id="tower"> Babel Tower</label>
+            <label><input type="checkbox" name="greatprojects" id="greatprojects"> Babel Great Projects</label>
+        </div>
+        <label><input type="radio" name="edifice" id="edifice"> Edifice</label><br>
+    <label><input type="checkbox" name="armada" id="armada"> Armada</label><br>
+        <div style="margin-left: 20px" class="siracusa">
+            <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
+        </div>
     <label>Share this configuration: 
       <input style="width: 100%;" type="text" id="generatedUrl" name="generatedUrl" />
     </label>
@@ -453,55 +445,33 @@ $(function () {
 </form>
 
 <form id="preconfigform" class="preconfigured" style="display: none;">
-  <fieldset id="preconfigbox">
-    <legend>Configuration:</legend>
-    <p>This link was pre-configured. <a href="{{ site.baseurl}}rulebook.html">
-    Click here to go back to the configurable rulebook.</a></p>
+    <fieldset id="preconfigbox">
+        <legend>Configuration:</legend>
+        <p>This link was pre-configured. <a href="{{_site.baseurl}}rulebook.html">
+        Click here to go back to the configurable rulebook</a></p>
 
-    <p>
-    This configuration includes:</p>
-    <ul>
-      <li class="pegasus"> Pegasus
-        <ul> 
-          <li>Pegasus expansion</li>
-          <li class="forceexodus">Variant: use "extra card" style Loyalty deck from Exodus</li>
-        </ul>
-      </li>
-      <li class="exodus"> Exodus
+        <p>
+        This configuration includes:</p>
         <ul>
-          <li>Exodus expansion</li>
-          <li class="personalgoal"> Personal Goal cards</li>
-          <li class="finalfive"> Final Five cards</li>
-          <li class="cylonfleet"> Cylon Fleet board</li>
-          <li class="allyseasons"> Variant: Allies for All Seasons</li>
-          <li class="forcepegasus"> Variant: use regular Loyalty Deck instead of "extra card"</li>
+            <li class="1e">1st Edition</li>
+            <li class="2e">2nd Edition</li>
         </ul>
-      </li>
-      <li class="daybreak"> Daybreak
         <ul>
-          <li>Daybreak expansion</li>
-          <li class="forcedemetrius"> Variant: use the Demetrius board & Mission cards regardless of ending</li>
+            <li class="wonderpack">Wonder Pack</li>
+            <li class="catan">Catan</li>
         </ul>
-      </li>
-      <li class="cylonleader"> Cylon Leader chosen</li>
-      <li class="nosympathizer"> Official "No Sympathizer" variant</li>
-      <li class="sympatheticcylon"><span class="nopegasus"> Variant:</span> Use <span class="pegasus">official</span> "Sympathetic Cylon" variant <span class="nopegasus">without Pegasus</span></li>
-      <li class="forceoverlay"> Variant: Use a Cylon Locations overlay</li>
-      <li class="forcemotive"> Variant: Replace Agenda cards with Motives from Daybreak</li>
-      <li class="variants"> Show other official game variants</li>
-      <li class="help"> Show help</li>
-      <li class="highlight"> Highlight modified rules</li>
-      <li>Ending:
         <ul>
-          <li class="kobol">Kobol</li>
-          <li class="newcaprica">New Caprica</li>
-          <li class="ioniannebula">Ionian Nebula</li>
-          <li class="searchforhome">Search for Home (Earth)</li>
-          <li class="allendings">Variant: Show rules for ALL endings</li>
+            <li class="leaders">Leaders<span class="leaders-anniverrsary"> and Leaders Anniversary Pack</span></li>
+            <li class="cities">Cities<span class="cities-anniverrsary"> and Cities Anniversary Pack</span></li>
+            <li class="babel">Babel</li>
+            <ul>
+                <li class="tower">Babel Tower</li>
+                <li class="greatprojects">BabelGreat Projects</li>
+            </ul>
+            <li class="edifice">Edifice</li>
+            <li class="armada">Armada</li>
         </ul>
-      </li>
-    </ul> 
-  </fieldset>
+    </fieldset>
 </form>
 
 <form id="nojsform" class="nojs">
