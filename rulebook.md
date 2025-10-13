@@ -495,8 +495,6 @@ $(function () {
 <p>7 Wonders is a game for 3 to <span class="no-babel">8 </span>players. </p>
 
 ## The basics
-
-
 ## Game setup
 <p>Prepare a spacious table. </p>
 
@@ -534,7 +532,6 @@ $(function () {
         </div>
     </li>
 </ol>
-
 ## Turn order
 
 ### Start of Age
@@ -601,7 +598,6 @@ $(function () {
 	<li>Resolve construction of cards from the discard pile<span class="armada"> (no Naval Construction allowed)</span>. </li>
 	<li class="armada">Resolve Tax and Piracy. </li>
 </ol>
-
 ### End of Age
 <ol>
 	<li class="babel greatprojects">Check the completion status of the Great Project
