@@ -411,8 +411,8 @@ $(function () {
 <form id="configform" style="display: none;">
   <fieldset id="configbox">
     <legend>Configuration:</legend>
-      <label><input type="radio" name="edition" id="Ed1" /> 1st Edition</label>
-      <label><input type="radio" name="edition" id="Ed2" /> 2nd Edition</label>
+      <label><input type="radio" name="edition" id="Ed1" checked> 1st Edition</label>
+      <label><input type="radio" name="edition" id="Ed2"> 2nd Edition</label>
     <hr>
     <label><input type="checkbox" name="wonderpack" id="wonderpack"> Wonder Pack</label><br>
     <label><input type="checkbox" name="catan" id="catan"> Catan Wonder</label><br>
@@ -480,55 +480,6 @@ $(function () {
   </fieldset>
 </form>
 
-
-<div class="help" markdown="1">
-## Help
-
-Use the checkboxes and menus above to select a configuration of Battlestar Galactica expansions, modules, and variants. Some items might be disabled if they conflict with another selected option. 
-
-### All endings
-
-Many variants exist that add *all* the endings to the game. None of them are included here, but you can still use this rulebook for such a game by selecting "all endings". This will show all of the official rules for every ending. Whichever variant you are using will tell you how to proceed through all the endings, but when you need to resolve "normal" gameplay events and issues they will be available.
-
-### Agendas and Motives
-
-Pegasus and Daybreak both added Cylon Leaders, but the way that Cylon Leaders win is different in Daybreak. You can choose to "backport" Motive cards to the Pegasus elements that use Agenda cards (Cylon Leaders and Sympathetic Cylon). The reverse (using Agenda cards in Daybreak for Cylon Leaders) isn't integrated into the rules, because Agenda cards are very simple and don't have any rule conflicts. All you have to do is:
-
-- Give the Cylon Leader a Hostile (for a 5 or 7 player game) or Sympathetic (4 or 6 player game) Agenda card when the first round of Loyalty cards goes out.
-- Ignore any mention of Motive cards in the rules. 
-- Use the text of the Agenda card to determine whether the Cylon Leader wins or loses at the end of the game. 
-
-### Sympathizer variants
-
-The "Sympathizer" role from the base game is intended to be a sort of "half-Cylon": if the game is going well for the humans, a new Cylon is added (with some restrictions), but if not, a human player is merely sent to the Brig. 
-
-This card proved to be rather unpopular for a few reasons. For one, the unlucky player who becomes a Cylon via the Sympathizer card is immediately revealed as a Cylon and doesn't get to secretly sabotage the humans, and even as a Cylon they do not get a Super Crisis and cannot use the Cylon Fleet location, removing over a quarter of their possible Cylon actions. Secondly, it adds an incentive for the humans to sabotage themselves before the Sleeper Agent phase so that the Sympathizer stays human. 
-
-There are a few options for avoiding the Sympathizer. Daybreak and Pegasus add Cylon Leaders, special characters who are almost literally half-Cylons and therefore remove the need for a Sympathizer when they are used. Pegasus adds the option of using the "Sympathetic Cylon" Loyalty card, which is very similar to the Sympathizer but instead changes a player into essentially a Cylon Leader. As a variant, you can even choose to just use the Sympathetic Cylon without the rest of Pegasus. 
-
-Daybreak replaces both the "Sympathizer" and "Sympathetic Cylon" with "The Mutineer", a player who gets lots of Mutiny cards, so no variant is necessary to avoid the Sympathizer using this expansion. 
-
-The simplest option, however, requiring no expansions at all, is the "No Sympathizer" variant which was officially released by Fantasy Flight Games. It just handicaps the humans and allows Cylons to draw more cards. 
-
-### Allies for All Seasons
-
-This variant was designed by Alexander DeSouza. It allows the "Ally" mechanic to be added to a game without having to use the entire Ionian Nebula ending. 
-
-### Loyalty deck variants
-
-The Loyalty deck variants have to do with the Exodus "extra card" rule change. In Pegasus, an executed human player always comes back as a human. This is a little unfortunate from a story perspective: the humans can perform a rather gruesome, but guaranteed, Cylon test for a relatively small cost. Exodus changes this, and always leaves an extra Loyalty card in the deck. This has two effects: an executed human may come back as a Cylon, but a Cylon card might remain in the deck, never dealt to a player at all. 
-
-Both have their pros and cons. The Pegasus version has the advantage that the game is never short a Cylon. The Exodus version has more intrigue, and avoids giving the humans a perverse incentive to kill their own teammates. The Exodus version starts to make even more sense when Personal Goal and Final Five cards are included, because even if an executed human comes back as a human, they may be stuck with one of these human-hostile cards. The Pegasus version starts to make more sense with fewer players, since it becomes more likely that the remaining card will be a Cylon. 
-
-Some game mechanics depend on the Exodus version, like Personal Goal cards and some Ally cards. When those are enabled, you will be forced to use the Exodus style. Otherwise, you can choose whichever one you like best: guaranteed Cylons but also an easy test, or more uncertainty and the possibility of a missing Cylon. You could also pick one, but add an additional rule to mitigate the downsides. Some examples include:
-
-- Exodus rules, then at distance 7, all human players roll the die. The lowest receives the final Loyalty card, guaranteeing that the last Cylon gets out at some point.
-- Pegasus rules, but a new human character must draw from a special deck that is half “Personal Goal”/”Final Five” cards, half normal “Not A Cylon” cards. They’ll still be a guaranteed human, but dealing with the special Loyalty card can penalize the humans for killing an innocent.
-- Exodus rules, then at the end of the game, if the remaining card was a Cylon, deduct 1 from each resource as a handicap before declaring a human victory.
-
-</div>
-
-
 {% include toc.html %}
 
 <div id="statictoc" class="nojs">
@@ -536,56 +487,55 @@ Some game mechanics depend on the Exodus version, like Personal Goal cards and s
 </div>
 
 ## Introduction
-
+<p>7 Wonders is a game for 3 to <span class="no-babel"></span></p>
 
 ## The basics
 
 
 ## Game setup
-Prepare a spacious table.
+<p>Prepare a spacious table. </p>
 
 <ol>
-<li>Separate the Age cards into the three Age decks. </li>
-<li>Discard the cards that show a player count above the number of players. </li>
-<li class="cities">Separate the Black cards into the three Age decks and shuffle each. </li>
-<li class="cities">For each age add as many black cards as there are players. </li>
-<li>Shuffle all the purple (Guild) cards and draw the <em>number of players + 2 </em>and add them to the Age III deck. </li>
-<li class="armada">Separate the Armada Age cards into the three age decks and shuffle each. </li>
-<li class="armada">For each age, add as many Armada cards as there are players. </li>
-<li>Add to the set of wonders <span class="cities">Byzantium, Petra, </span><span class="armada">Siracusa, </span><span class="leaders">Rome, Abu Simbel, </span><span class="edifice">Ur, </span>to the set of wonders. </li>
-<li>Each player selects or randomly gets a Wonder Board. Choose or select randomly <span class="Ed1">an A </span><span class="Ed2">a day </span>or <span class="Ed1">B </span><span class="Ed2">night </span> side. </li>
-<li>Each player gets <span class="no-leaders">3 </span><span class="leaders">6 </span>coins from the bank. </li>
-<li class="babel tower">Place the base of the Babel Tower depending on the number of players (2-4 players, 3 placeholders; 5-8 players, 4 placeholders). </li>
-<li class="babel tower">Deal 3 random Babel tiles in front of them, face down. </li>
-<li class="babel tower">Secretly choose one tile, place it down in front of you and pass the remaining to the player on your right. </li>
-<li class="babel tower">Repeat until each player receives the last tile from the player to the left and each player has 3 tiles in their pile. </li>
-<li class="leaders">Deal 4 random leader cards to each player</li>
-<li class="leaders">Secretly choose one leader card and place it face down in front of you. </li>
-<li class="leaders">Pass the rest of the cards to the person on your right. </li>
-<li class="leaders">Repeat until all the cards are used, so each person has a leader card in hand, which is discarded. </li>
-<li class="armada">Each player gets a shipyard board and a boat of each color. </li>
-<li class="armada">The island cards are added to the table in separate piles for each level. </li>
-<li class="edifice">Separate the Edifice cards into the three Ages, shuffle them and place one random card per Age, project face up, in the middle of the table. </li>
-<li class="edifice">Put the number of participation pawns (2,3,3,4,5) on each card depending on the number of players (3,4,5,6,7).
-<div markdown="1">
-| Players | Pawns |
-|:-------:|:-----:|
-|    3    |   2   |
-|    4    |   3   |
-|    5    |   3   |
-|    6    |   4   |
-|    7    |   5   |
-
-</div>
-</li>
+    <li>Separate the Age cards into the three Age decks. </li>
+    <li>Discard the cards that show a player count above the number of players. </li>
+    <li class="cities">Separate the Black cards into the three Age decks and shuffle each. </li>
+    <li class="cities">For each age add as many black cards as there are players. </li>
+    <li>Shuffle all the purple (Guild) cards and draw the <em>number of players + 2 </em>and add them to the Age III deck. </li>
+    <li class="armada">Separate the Armada Age cards into the three age decks and shuffle each. </li>
+    <li class="armada">For each age, add as many Armada cards as there are players. </li>
+    <li>Add to the set of wonders <span class="cities">Byzantium, Petra, </span><span class="armada">Siracusa, </span><span class="leaders">Rome, Abu Simbel, </span><span class="edifice">Ur, </span>to the set of wonders. </li>
+    <li>Each player selects or randomly gets a Wonder Board. Choose or select randomly <span class="Ed1">an A </span><span class="Ed2">a day </span>or <span class="Ed1">B </span><span class="Ed2">night </span> side. </li>
+    <li>Each player gets <span class="no-leaders">3 </span><span class="leaders">6 </span>coins from the bank. </li>
+    <li class="babel tower">Place the base of the Babel Tower depending on the number of players (2-4 players, 3 placeholders; 5-8 players, 4 placeholders). </li>
+    <li class="babel tower">Deal 3 random Babel tiles in front of them, face down. </li>
+    <li class="babel tower">Secretly choose one tile, place it down in front of you and pass the remaining to the player on your right. </li>
+    <li class="babel tower">Repeat until each player receives the last tile from the player to the left and each player has 3 tiles in their pile. </li>
+    <li class="leaders">Deal 4 random leader cards to each player</li>
+    <li class="leaders">Secretly choose one leader card and place it face down in front of you. </li>
+    <li class="leaders">Pass the rest of the cards to the person on your right. </li>
+    <li class="leaders">Repeat until all the cards are used, so each person has a leader card in hand, which is discarded. </li>
+    <li class="armada">Each player gets a shipyard board and a boat of each color. </li>
+    <li class="armada">The island cards are added to the table in separate piles for each level. </li>
+    <li class="edifice">Separate the Edifice cards into the three Ages, shuffle them and place one random card per Age, project face up, in the middle of the table. </li>
+    <li class="edifice">Put the number of participation pawns (2,3,3,4,5) on each card depending on the number of players (3,4,5,6,7).
+        <div markdown="1">
+        | Players | Pawns |
+        |:-------:|:-----:|
+        |    3    |   2   |
+        |    4    |   3   |
+        |    5    |   3   |
+        |    6    |   4   |
+        |    7    |   5   |
+        </div>
+    </li>
 </ol>
 
 ## Turn order
 ### Start of Age
 <ol>
 	<li class="step babel greatprojects">Take one Great Project card and place it in the middle of the table, and place on it as many Participation tokens as the number of players minus one. </li>
-	<li class="step leaders">Choose one of your leader cards and place them face down in front of you.
-		<p>You can: <p>
+	<li class="step leaders"><p>Choose one of your leader cards and place them face down in front of you. </p>
+		<p>With the chosen leader card, you can: </p>
 		<ul>
 			<li><strong>Recruit this Leader: </strong>
 					<p>Reveal the leader and pay its cost in coins. Place your leader face up next to your wonder. From now on you can benefit from its effect. </p>
