@@ -502,3 +502,24 @@ $(function () {
 #### Turn Resolution
 
 ### End of Age
+<ol>
+	<li class="babel greatprojects">Check the completion status of the Great Project
+		<ul>
+			<li><strong>The Great Project is a success. </strong> If all participation tokens have been taken all players who participated gain as many reward tokens as they have participation tokens in their possession. The return tokens are returned to the supply. </li>
+			<li><strong>The Great Project is a failure. </strong>If there are remaining tokens on the Great Project card, those players without a participation token suffer the penalty displayed on the Great Project card. The return tokens are returned to the supply. </li>
+		</ul>
+		<p>If a player cannot pay the penalty, they must take a penalty token for value according to the Age (-1, -2, or -3). </p>
+	</li>
+	<li>Resolve <span class="no-armada">Military</span><span class="armada">Ground</span> Conflict. Award bonus and penalty points comparing your <span class="no-armada">military strength</span><span class="armada">Ground Shields</span> to your left and right neighbors'<span class="armada"> and players you've given an incursion token to (diplomacy tokens do not affect boarding tokens)</span>. In case of tie no one gets a bonus/penalty token. <span class="cities">If you have a diplomacy token, you do not participate in military conflicts and your neighbors to your left and right compare each other as if they were adjacent. Discard the diplomacy token after the resolution of all conflicts. </span></li>
+	<li class="armada">Resolve Naval conflicts. Award bonus and penalty tokens. The comparison is done among all players. The weakest Naval Strength gets a penalty bonus, then the strongest, second and third get the corresponding bonuses, in that order. 
+    <div markdown="1">
+    |  Age  | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
+    |:-----:|:-------:|:---------:|:------------- |:-------------:|
+    |  I    |    -1   |     3     |       1       |               |
+    |  II   |    -2   |     5     |       3       |               |
+    |  III  |    -3   |     7     |       5       |       3       |
+    </div>
+    <p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
+	</li>
+</ol>
+<p>Each Guild Card is limited to a maximum of 10 points. </p>
