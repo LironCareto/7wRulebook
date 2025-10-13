@@ -8,7 +8,7 @@ toc_stop_autofire: true
 <script type="text/javascript">
 
 function toggleEd() {
-  return toggle('#cylonleader');
+  return toggle('#edition');
 }
 
 function toggle(id) {
@@ -79,72 +79,6 @@ function validateForm() {
   } else {
     enable('#allyseasons');
   }
-  
-  // Loyalty deck styles only apply in certain scenarios
-  if ($('#ioniannebula').is(':selected')
-       || readCheckbox('#allyseasons') 
-       || readCheckbox('#personalgoal')) {
-     // Exodus style is required.
-     forbidCheckbox('#forcepegasus');
-     forbidCheckbox('#forceexodus');
-   }
-  
-  if (readCheckbox('#forceexodus')) {
-    // Obviously can't have both on at the same time
-    forbidCheckbox('#forcepegasus');
-  } else if (readCheckbox('#forcepegasus') || readCheckbox('#exodus')) {
-    // Also, no point in "forcing" Exodus if it's already on
-    forbidCheckbox('#forceexodus');
-  }
-  
-  if (readCheckbox('#daybreak')) {
-    enable('#searchforhome');
-    if ( ! $('#searchforhome').is(':selected')
-         && ! $('#allendings').is(':selected')) {
-      enable('#forcedemetrius');
-    } else {
-      forbidCheckbox('#forcedemetrius');
-    }
-  } else {
-    forbidMenu('#searchforhome');
-    forbidCheckbox('#forcedemetrius');
-  }
-  if (readCheckbox('#pegasus') || readCheckbox('#daybreak')) {
-    enable('#cylonleader');
-  } else {
-    forbidCheckbox('#cylonleader');
-  }
-  
-  if (readCheckbox('#cylonleader') || readCheckbox('#daybreak')) {
-    // Sympathizer rules don't apply
-    forbidCheckbox('#nosympathizer');
-    forbidCheckbox('#sympatheticcylon');
-  } else {
-    enable('#nosympathizer');
-    enable('#sympatheticcylon');
-  }
-  if (readCheckbox('#sympatheticcylon')) {
-    forbidCheckbox('#nosympathizer');
-  } else if (readCheckbox('#nosympathizer')) {
-    forbidCheckbox('#sympatheticcylon');
-  }
-  
-  if (! readCheckbox('#daybreak') &&
-        (readCheckbox('#cylonleader') || readCheckbox('#sympatheticcylon'))) {
-    // Agenda cards are possible, might want to override
-    enable('#forcemotive');
-  } else {
-    forbidCheckbox('#forcemotive');
-  }
-  
-  if (readCheckbox('#daybreak') || readCheckbox('#pegasus')
-      || readCheckbox('#sympatheticcylon')) {
-    forbidCheckbox('#forceoverlay');  
-  } else {
-    enable('#forceoverlay');
-  }
-  
-}
 
 function highlight(theClass) {
   // Don't highlight the "no" classes, except for "nosympathizer"
@@ -170,8 +104,6 @@ function flipSwitches () {
   //if (readCheckbox('#allendings')) {
     // Actually, don't read the endings, we'll do that now.
     pullFrom = 'input';
-    showThese = ['cities', 'leaders', 'babel', 'armada'];
-    hideThese = ['no-cities', 'no-leaders', 'no-babel', 'no-armada'];
   //}
   
   $(pullFrom).each(function(index, element) {
@@ -183,93 +115,7 @@ function flipSwitches () {
       hideThese.push($(this).attr('id'));
     }
   });  
-  
-  if (readCheckbox('#daybreak') 
-      || readCheckbox('#pegasus')
-      || readCheckbox('#exodus')) {
-    showThese.push('expansion');
-    hideThese.push('noexpansion');
-  } else {
-    showThese.push('noexpansion');
-    hideThese.push('expansion');
-  }
-  
-  if (readCheckbox('#pegasus') || readCheckbox('#exodus')) {
-    showThese.push('execution');
-    hideThese.push('noexecution');
-  } else {
-    showThese.push('noexecution');
-    hideThese.push('execution');
-  }
-
-    // Exodus loyalty if either:
-  //    Exodus is enabled, and hasn't been forced off
-  //    Or we've forced Exodus rules to be on
-  if ( (readCheckbox('#exodus') && ! readCheckbox('#forcepegasus'))
-       || readCheckbox('#forceexodus')) {
-    showThese.push('exodusloyalty');
-    hideThese.push('noexodusloyalty');
-  } else {
-    showThese.push('noexodusloyalty');
-    hideThese.push('exodusloyalty');
-  }
-  
-  if (readCheckbox('#daybreak') || readCheckbox('#pegasus')) {
-    showThese.push('treachery');
-    hideThese.push('notreachery');
-  } else {
-    showThese.push('notreachery');
-    hideThese.push('treachery');
-  }
-  
-  if (readCheckbox('#cylonleader') || readCheckbox('#sympatheticcylon')) {
-    showThese.push('infiltrator');
-    hideThese.push('noinfiltrator');
-    if (readCheckbox('#daybreak') || readCheckbox('#forcemotive')) {
-      showThese.push('motive');
-      hideThese.push('agenda');
-    } else {
-      showThese.push('agenda');
-      hideThese.push('motive');
-    }
-  } else {
-    showThese.push('noinfiltrator');
-    hideThese.push('infiltrator');
-    hideThese.push('agenda');
-    hideThese.push('motive');
-  }
-
-  
-  if (readCheckbox('#ioniannebula') 
-       || readCheckbox('#allendings')
-       || readCheckbox('#allyseasons')) {
-    showThese.push('allies');
-    hideThese.push('noallies');
-  } else {
-    showThese.push('noallies');
-    hideThese.push('allies');
-  }
-  
-  if (readCheckbox('#pegasus') || readCheckbox('#daybreak')
-      || readCheckbox('#sympatheticcylon')
-      || readCheckbox('#forceoverlay')) {
-    showThese.push('overlay');
-    hideThese.push('nooverlay');  
-  } else {
-    showThese.push('nooverlay');
-    hideThese.push('overlay');
-  }
-  
-  if (readCheckbox('#searchforhome')
-        || readCheckbox('#forcedemetrius')
-        || readCheckbox('#allendings')) {
-    showThese.push('demetrius');
-    hideThese.push('nodemetrius');
-  } else {
-    showThese.push('nodemetrius');
-    hideThese.push('demetrius');
-  }
-  
+      
   // Step 3: Show all the classes that need showing. 
   for (i in showThese) {
     $('.'+showThese[i]).show();
