@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Dynamic 7 Wonders rulebook
+title: Dynamic BSG rulebook
 toc: true
 toc_stop_autofire: true
 ---
 
 <script type="text/javascript">
 
-function toggleEd() {
+function toggleCL() {
   return toggle('#cylonleader');
 }
 
