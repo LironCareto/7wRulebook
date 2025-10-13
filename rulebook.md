@@ -364,7 +364,7 @@ function setValue(id) {
   return false;
 }
 
-// Make checkboxes mutually exclusive
+// Make checkboxes mutually exclusive, so you can uncheck them, what you can't do with radio buttons
 function toggleExclusive(clicked) {
   document.querySelectorAll('input[name="' + clicked.name + '"]').forEach(box => {
     if (box !== clicked) box.checked = false;
@@ -489,12 +489,10 @@ $(function () {
 
 {% include toc.html %}
 
-<div id="statictoc" class="nojs">
-<i>Jump to...</i> <ol><li><a href="#introduction">Introduction</a></li><li><a href="#the-basics">The basics</a><ol><li><a href="#strategy">Strategy</a></li></ol></li><li><a href="#game-setup">Game setup</a><ol><li><a href="#game-board">Game board</a></li><li><a href="#pegasus">Pegasus</a></li><li><a href="#exodus">Exodus</a></li><li><a href="#daybreak">Daybreak</a></li><li><a href="#kobol-ending">Kobol ending</a></li><li><a href="#new-caprica-ending">New Caprica ending</a></li><li><a href="#ionian-nebula-ending">Ionian Nebula ending</a></li><li><a href="#search-for-home-ending">Search for Home ending</a></li><li><a href="#choosing-characters">Choosing characters</a></li><li><a href="#loyalty-deck">Loyalty Deck</a></li><li><a href="#first-hand-of-cards">First hand of cards</a></li><li><a href="#ionian-nebula-additional-setup">Ionian Nebula additional setup</a></li><li><a href="#rule-reminders">Rule reminders</a></li></ol></li><li><a href="#playing-the-game">Playing The Game</a><ol><li><a href="#game-turn">Game turn</a></li><li><a href="#player-terminology">Player terminology</a></li><li><a href="#secrecy">Secrecy</a></li><li><a href="#resolving-rule-conflicts">Resolving rule conflicts</a></li><li><a href="#component-limitations">Component limitations</a></li><li><a href="#die-rolls">Die rolls</a></li><li><a href="#timing">Timing</a></li><li><a href="#resources">Resources</a></li><li><a href="#trauma-tokens">Trauma Tokens</a><ol><li><a href="#trauma-tokens-on-locations">Trauma tokens on locations</a></li></ol></li><li><a href="#ally-cards">Ally cards</a><ol><li><a href="#placing-a-new-ally">Placing a new Ally</a></li><li><a href="#ally-replaced-with-player-or-location-damaged">Ally replaced with player, or location damaged</a></li></ol></li><li><a href="#demetrius--missions">Demetrius &amp; Missions</a></li><li><a href="#rebel-basestar-human-or-cylon">Rebel Basestar (human or Cylon)</a></li><li><a href="#character-sheets">Character sheets</a></li><li><a href="#once-per-game">Once per game</a></li><li><a href="#loyalty-cards">Loyalty cards</a><ol><li><a href="#personal-goal-cards">Personal Goal cards</a></li><li><a href="#final-five-cards">Final Five cards</a></li><li><a href="#the-mutineer">The Mutineer</a></li></ol></li><li><a href="#mutiny-cards">Mutiny cards</a><ol><li><a href="#drawing-a-second-mutiny-card">Drawing a second Mutiny card</a></li><li><a href="#discarding-treachery-cards-and-gaining-mutiny-cards">Discarding Treachery cards and gaining Mutiny cards</a></li></ol></li><li><a href="#cylon-players">Cylon Players</a><ol><li><a href="#cylon-reveal-resolution">Cylon Reveal resolution</a></li></ol></li><li><a href="#titles">Titles</a><ol><li><a href="#president">President</a></li><li><a href="#admiral">Admiral</a></li><li><a href="#cag-commander-air-group">CAG (Commander, Air Group)</a></li></ol></li><li><a href="#lines-of-succession">Lines of Succession</a></li><li><a href="#actions--abilities">Actions &amp; Abilities</a><ol><li><a href="#movement-actions">Movement actions</a></li></ol></li><li><a href="#moves">Moves</a><ol><li><a href="#sabotage-treachery-card-interrupt">“Sabotage” Treachery card interrupt</a></li><li><a href="#moves-versus-movement-actions">Moves versus Movement actions</a></li></ol></li><li><a href="#skill-cards">Skill Cards</a><ol><li><a href="#skill-check-abilities">Skill Check Abilities</a></li><li><a href="#reckless-cards-and-abilities">Reckless cards and abilities</a></li><li><a href="#types">Types</a></li><li><a href="#destiny-deck">Destiny Deck</a></li></ol></li><li><a href="#crisis-card-resolution">Crisis card resolution</a></li><li><a href="#event-crisis-cards">Event Crisis cards</a></li><li><a href="#super-crisis-cards">Super Crisis Cards</a></li><li><a href="#skill-check-resolution">Skill Check resolution</a></li><li><a href="#activating-cylon-ships">Activating Cylon ships</a><ol><li><a href="#activating-a-raider">Activating a raider</a></li><li><a href="#activating-heavy-raiders-and-centurions">Activating heavy raiders and Centurions</a></li></ol></li><li><a href="#jumping-the-fleet">Jumping the fleet</a></li><li><a href="#sleeper-agent-phase">Sleeper Agent phase</a><ol><li><a href="#revealed-cylons-during-the-sleeper-agent-phase">Revealed Cylons during the Sleeper Agent phase</a></li></ol></li><li><a href="#combat-ship-attack-table">Combat ship attack table</a><ol><li><a href="#basestar-damage">Basestar damage</a></li><li><a href="#damaging-galactica">Damaging Galactica</a></li><li><a href="#damaging-pegasus">Damaging Pegasus</a></li><li><a href="#scar">Scar</a></li></ol></li><li><a href="#human-combat-ships">Human combat ships</a><ol><li><a href="#civilian-ships">Civilian ships</a><ol><li><a href="#drawing-and-destroying">Drawing and destroying</a></li></ol></li><li><a href="#raptors">Raptors</a></li><li><a href="#vipers">Vipers</a></li><li><a href="#mark-vii-vipers">Mark VII Vipers</a></li><li><a href="#assault-raptors">Assault raptors</a></li><li><a href="#piloting">Piloting</a></li></ol></li><li><a href="#execution">Execution</a><ol><li><a href="#finishing-a-cylon-execution">Finishing a Cylon execution</a></li><li><a href="#finishing-a-human-execution">Finishing a human execution</a></li></ol></li><li><a href="#character-ability-notes">Character ability notes</a></li><li><a href="#location-notes">Location notes</a><ol><li><a href="#commmand">Commmand</a></li><li><a href="#the-brig">The Brig</a></li><li><a href="#choosing-players-for-sickbaybrig">Choosing players for Sickbay/Brig</a></li><li><a href="#colonial-one">Colonial One</a></li><li><a href="#cylon-fleet-location">Cylon Fleet location</a></li><li><a href="#basestar-bridge">Basestar Bridge</a></li></ol></li></ol></li><li><a href="#ending-the-game">Ending the game</a><ol><li><a href="#new-caprica-phase">New Caprica phase</a><ol><li><a href="#new-caprica-phase-setup">New Caprica phase setup</a></li><li><a href="#new-caprica-phase-rules">New Caprica phase rules</a><ol><li><a href="#occupation-forces">Occupation Forces</a></li><li><a href="#preparing-civilian-ships">Preparing civilian ships</a></li><li><a href="#brig-versus-detention">Brig versus Detention</a></li></ol></li><li><a href="#before-galactica-returns">Before Galactica returns</a></li><li><a href="#after-galactica-returns">After Galactica returns</a></li><li><a href="#evacuating-new-caprica">Evacuating New Caprica</a></li></ol></li><li><a href="#ionian-nebula-crossroads-phase">Ionian Nebula: Crossroads Phase</a><ol><li><a href="#battle-of-the-ionian-nebula">Battle of the Ionian Nebula</a></li><li><a href="#crossroads">Crossroads</a></li><li><a href="#the-trialboxing-the-line">The Trial/Boxing the Line</a></li><li><a href="#elimination">Elimination</a></li></ol></li><li><a href="#human-loss">Human loss</a></li><li><a href="#final-jump">Final jump</a></li></ol></li></ol>
-</div>
+
 
 ## Introduction
-<p>7 Wonders is a game for 3 to <span class="no-babel"></span></p>
+<p>7 Wonders is a game for 3 to <span class="no-babel">8 </span>players. </p>
 
 ## The basics
 
@@ -538,6 +536,7 @@ $(function () {
 </ol>
 
 ## Turn order
+
 ### Start of Age
 <ol>
 	<li class="step babel greatprojects">Take one Great Project card and place it in the middle of the table, and place on it as many Participation tokens as the number of players minus one. </li>
@@ -614,14 +613,14 @@ $(function () {
 	</li>
 	<li>Resolve <span class="no-armada">Military</span><span class="armada">Ground</span> Conflict. Award bonus and penalty points comparing your <span class="no-armada">military strength</span><span class="armada">Ground Shields</span> to your left and right neighbors'<span class="armada"> and players you've given an incursion token to (diplomacy tokens do not affect boarding tokens)</span>. In case of tie no one gets a bonus/penalty token. <span class="cities">If you have a diplomacy token, you do not participate in military conflicts and your neighbors to your left and right compare each other as if they were adjacent. Discard the diplomacy token after the resolution of all conflicts. </span></li>
 	<li class="armada">Resolve Naval conflicts. Award bonus and penalty tokens. The comparison is done among all players. The weakest Naval Strength gets a penalty bonus, then the strongest, second and third get the corresponding bonuses, in that order. 
-	<div markdown="1">
-	|  Age  | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
-	|:-----:|:-------:|:---------:|:------------- |:-------------:|
-	|  I    |    -1   |     3     |       1       |               |
-	|  II   |    -2   |     5     |       3       |               |
-	|  III  |    -3   |     7     |       5       |       3       |
-
-	</div>
-	<p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
+    <div markdown="1">
+    |  Age  | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
+    |:-----:|:-------:|:---------:|:------------- |:-------------:|
+    |  I    |    -1   |     3     |       1       |               |
+    |  II   |    -2   |     5     |       3       |               |
+    |  III  |    -3   |     7     |       5       |       3       |
+    </div>
+    <p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
 	</li>
+</ol>
 <p>Each Guild Card is limited to a maximum of 10 points. </p>
