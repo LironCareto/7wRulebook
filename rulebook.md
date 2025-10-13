@@ -599,7 +599,7 @@ You can:
 <li>Choose a card from your hand, and pass the deck to the player of your left or right (look at the curved arrow on the back of the cards).
     <ul>
         <li>Construct the card <strong>as long as it's not already existing in your city</strong>:
-            <ul>
+            <ul?>
             <li>Pay the cost shown on the card and place it, face up, behind your wonder. Resources must com from you or your neighbors. Each resource costs 2 coins. </li>
             <li><span class="armada babel greatprojects">Choose between:</span>
                 <ul>
@@ -616,8 +616,7 @@ You can:
         <ul>
             <li>Discard the card and place the chosen Babel Tower tile face down in front of you. Once all players have played their turn, place your tile on the board, starting from the placeholder marked with the circular arrow. If more than one player is building the table, the tiles are placed in order of the number printed in the tile. </li>
             <li>The effects of the Babel Tower tiles apply to all players as long as they are not covered by another Babel Tower tile. </li>
-        </ul></li>
-</li>
+        </ul></li></ul></li></ol>
 <p>Continue until you have 2 cards in your hand. If that's the case, discard one, and play the other one.</p>
 
 #### Turn Resolution
