@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Dynamic BSG rulebook
-toc: true
+title: Dynamic 7 Wonders rulebook
+permalink: /7wRulebook
+toc: false
 toc_stop_autofire: true
 ---
 
