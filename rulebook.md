@@ -495,10 +495,7 @@ $(function () {
 
 ## Introduction
 <p>7 Wonders is a game for 3 to <span class="no-babel"></span></p>
-
 ## The basics
-
-
 ## Game setup
 <p>Prepare a spacious table. </p>
 
@@ -536,7 +533,6 @@ $(function () {
         </div>
     </li>
 </ol>
-
 ## Turn order
 ### Start of Age
 <ol>
@@ -602,7 +598,6 @@ $(function () {
 	<li>Resolve construction of cards from the discard pile<span class="armada"> (no Naval Construction allowed)</span>. </li>
 	<li class="armada">Resolve Tax and Piracy. </li>
 </ol>
-
 ### End of Age
 <ol>
 	<li class="babel greatprojects">Check the completion status of the Great Project
@@ -620,7 +615,6 @@ $(function () {
 	|  I    |    -1   |     3     |       1       |               |
 	|  II   |    -2   |     5     |       3       |               |
 	|  III  |    -3   |     7     |       5       |       3       |
-
 	</div>
 	<p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
 	</li>
