@@ -2,7 +2,7 @@
 layout: default
 title: Dynamic 7 Wonders rulebook
 permalink: /7wRulebook
-toc: false
+toc: true
 toc_stop_autofire: true
 ---
 
