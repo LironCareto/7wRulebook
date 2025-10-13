@@ -586,42 +586,37 @@ Prepare a spacious table.
 <li class="babel greatprojects">Take one Great Project card and place it in the middle of the table, and place on it as many Participation tokens as the number of players minus one. </li>
 <li class="leaders">Choose one of your leader cards and place them face down in front of you.
 You can:
-<ul>
-<li>Recruit this Leader:
     <ul>
-    <li>Reveal the leader and pay its cost in coins. Place your leader face up next to your wonder. From now on you can benefit from its effect. </li>
-    <li>If the cost shows 'A' then it cost in coins is the current Age. </li></ul>
-<li>Construct a stage of your Wonder:
-    <ul>
-    <li>Use the leader card to build a stage of your wonder following the usual rules. </li></ul>
-<li>Sell this leader:
-    <ul>
-    <li>Discard the leader card and take 3 coins from the bank. </li></ul>
-</li>
+        <li>Recruit this Leader:
+            <ul>
+                <li>Reveal the leader and pay its cost in coins. Place your leader face up next to your wonder. From now on you can benefit from its effect. </li>
+                <li>If the cost shows 'A' then it cost in coins is the current Age. </li></ul></li>
+        <li>Construct a stage of your Wonder:
+            Use the leader card to build a stage of your wonder following the usual rules. </li>
+        <li>Sell this leader:
+            Discard the leader card and take 3 coins from the bank. 
+    </ul></li>
 <li>Choose a card from your hand, and pass the deck to the player of your left or right (look at the curved arrow on the back of the cards).
     <ul>
-    <li>Construct the card <strong>as long as it's not already existing in your city</strong>:
-        <ul>
-        <li>Pay the cost shown on the card and place it, face up, behind your wonder. Resources must com from you or your neighbors. Each resource costs 2 coins. </li>
-        <li><span class="armada babel greatprojects">Choose between:</span>
+        <li>Construct the card <strong>as long as it's not already existing in your city</strong>:
             <ul>
-            <li class="armada"> If the card color matches Red, Yellow, Blue, or Green, you may pay the cost and move the corresponding boat on your shipyard board and apply the corresponding effect. If the effect is exploring an island, if you are the only one exploring that level's island, draw 4 cards and choose one to keep, returning the rest to the deck and shuffle. If multiple players are exploring the same level's island, they are dealt evenly all the cards from that level in the island deck, returning those cards that cannot be dealt. Each player choose which island to explore and return the rest to the deck, and shuffle. Place the island card under the Shipyard board on the corresponding space, leaving visible only the benefit granted. </li>
-            <li class="babel greatprojects">If the card you constructed matches the color of the active Great Project, and there are available participation to-kens on the Great Project card, you can participate in its construction paying the Participation Cost. If you choose to do so, take a participation token and place it on your Wonder Board. </li>
-            </ul>
-        </li>
+            <li>Pay the cost shown on the card and place it, face up, behind your wonder. Resources must com from you or your neighbors. Each resource costs 2 coins. </li>
+            <li><span class="armada babel greatprojects">Choose between:</span>
+                <ul>
+                <li class="armada"> If the card color matches Red, Yellow, Blue, or Green, you may pay the cost and move the corresponding boat on your shipyard board and apply the corresponding effect. If the effect is exploring an island, if you are the only one exploring that level's island, draw 4 cards and choose one to keep, returning the rest to the deck and shuffle. If multiple players are exploring the same level's island, they are dealt evenly all the cards from that level in the island deck, returning those cards that cannot be dealt. Each player choose which island to explore and return the rest to the deck, and shuffle. Place the island card under the Shipyard board on the corresponding space, leaving visible only the benefit granted. </li>
+                <li class="babel greatprojects">If the card you constructed matches the color of the active Great Project, and there are available participation to-kens on the Great Project card, you can participate in its construction paying the Participation Cost. If you choose to do so, take a participation token and place it on your Wonder Board. </li></ul></li>
     <li>Construct a stage of your wonder:
         Construct the next stage of your wonder in order. <span class="siracusa">Siracusa stages can be built in any order. </span><span class="wonderpack">The Great Wall stages can be built in any order. </span>
         <ul>
-        <li>Turn the card face down and pay the cost shown on the wonder space it is being used for. Place the upside-down card on the bottom of the wonder under the stage you have built. <span class="edifice">Once per age, when you construct a stage of your wonder you can participate in the construction in the current age's edifice. Pay the cost of your wonder stage and the project cost at the same time, then take a participation pawn from the card. If multiple players contribute on the same turn, take extra pawns from the box if needed. If all pawns are taken from the edifice card, then it is constructed. Flip the card over and anyone with a participation pawn immediately gains the reward shown on the card. <span class="armada">You cannot move a ship forward <strong>and </strong>contribute to a project on the same turn</span></span><span class="armada">Move a boat on your shipyard board on the column with the wonder symbol<span class="edifice"> only if you didn't participate in the edifice construction this turn</span>. </span></li></ul>        
+            <li>Turn the card face down and pay the cost shown on the wonder space it is being used for. Place the upside-down card on the bottom of the wonder under the stage you have built. <span class="edifice">Once per age, when you construct a stage of your wonder you can participate in the construction in the current age's edifice. Pay the cost of your wonder stage and the project cost at the same time, then take a participation pawn from the card. If multiple players contribute on the same turn, take extra pawns from the box if needed. If all pawns are taken from the edifice card, then it is constructed. Flip the card over and anyone with a participation pawn immediately gains the reward shown on the card. <span class="armada">You cannot move a ship forward <strong>and </strong>contribute to a project on the same turn</span></span><span class="armada">Move a boat on your shipyard board on the column with the wonder symbol<span class="edifice"> only if you didn't participate in the edifice construction this turn</span>. </span></li></ul></li>        
     <li>Sell the card:
         <ul>
-        <li>Discard the card face down in the middle of the table and take 3 coins from the bank<span class="armada"> <strong>or </strong>move your yellow boat up a row without paying the naval cost</span>. </li></ul>
-    </li></ul>
+            <li>Discard the card face down in the middle of the table and take 3 coins from the bank<span class="armada"> <strong>or </strong>move your yellow boat up a row without paying the naval cost</span>. </li></ul></li>
     <li class="babel tower">Build the Babel Tower:
         <ul>
-        <li>Discard the card and place the chosen Babel Tower tile face down in front of you. Once all players have played their turn, place your tile on the board, starting from the placeholder marked with the circular arrow. If more than one player is building the table, the tiles are placed in order of the number printed in the tile. </li>
-        <li>The effects of the Babel Tower tiles apply to all players as long as they are not covered by another Babel Tower tile. </li></ul>
-    </li>
+            <li>Discard the card and place the chosen Babel Tower tile face down in front of you. Once all players have played their turn, place your tile on the board, starting from the placeholder marked with the circular arrow. If more than one player is building the table, the tiles are placed in order of the number printed in the tile. </li>
+            <li>The effects of the Babel Tower tiles apply to all players as long as they are not covered by another Babel Tower tile. </li>
+        </ul></li>
 </li>
 <p>Continue until you have 2 cards in your hand. If that's the case, discard one, and play the other one.</p>
 
