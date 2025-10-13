@@ -364,6 +364,13 @@ function setValue(id) {
   return false;
 }
 
+// Make checkboxes mutually exclusive
+function toggleExclusive(clicked) {
+  document.querySelectorAll('input[name="' + clicked.name + '"]').forEach(box => {
+    if (box !== clicked) box.checked = false;
+  });
+}
+
 // This is the page initialization code
 $(function () {
   // Obviously, we have JavaScript if this is running.
@@ -425,12 +432,12 @@ $(function () {
     <div style="margin-left: 20px" class="cities">
         <label><input type="checkbox" name="cities-anniversary">Cities Anniversary Pack</label>
     </div>
-    <label><input type="radio" name="babeledifice" id="babel"> Babel</label><br>
+    <label><input type="checkbox" name="babeledifice" id="babel"> Babel</label><br>
     <div style="margin-left: 20px" class="babel">
         <label><input type="checkbox" name="tower" id="tower"> Babel Tower</label>
         <label><input type="checkbox" name="greatprojects" id="greatprojects"> Babel Great Projects</label>
     </div>
-    <label><input type="radio" name="babeledifice" id="edifice"> Edifice</label><br>
+    <label><input type="checkbox" name="babeledifice" id="edifice"> Edifice</label><br>
     <label><input type="checkbox" name="armada" id="armada"> Armada</label><br>
     <div style="margin-left: 20px" class="siracusa">
         <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
