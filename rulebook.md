@@ -167,12 +167,12 @@ function flipSwitches () {
   var showThese = [];
   var hideThese = [];
   var pullFrom = 'input,option';
-  if (readCheckbox('#allendings')) {
+  //if (readCheckbox('#allendings')) {
     // Actually, don't read the endings, we'll do that now.
     pullFrom = 'input';
-    showThese = ['allendings', 'kobol', 'newcaprica', 'ioniannebula', 'searchforhome'];
-    hideThese = ['noallendings', 'nokobol', 'nonewcaprica', 'noioniannebula', 'nosearchforhome'];
-  }
+    showThese = ['cities', 'leaders', 'babel', 'armada'];
+    hideThese = ['no-cities', 'no-leaders', 'no-babel', 'no-armada'];
+  //}
   
   $(pullFrom).each(function(index, element) {
     if ($(this).is(':checked')) {
@@ -432,9 +432,9 @@ $(function () {
     </div>
     <label><input type="radio" name="babeledifice" id="edifice"> Edifice</label><br>
     <label><input type="checkbox" name="armada" id="armada"> Armada</label><br>
-        <div style="margin-left: 20px" class="siracusa">
-            <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
-        </div>
+    <div style="margin-left: 20px" class="siracusa">
+        <label><input type="checkbox" name="siracusa" id="siracusa">Siracusa Wonder</label>
+    </div>
     <label>Share this configuration: 
       <input style="width: 100%;" type="text" id="generatedUrl" name="generatedUrl" />
     </label>
@@ -553,7 +553,7 @@ Prepare a spacious table.
 <li class="armada">Separate the Armada Age cards into the three age decks and shuffle each. </li>
 <li class="armada">For each age, add as many Armada cards as there are players. </li>
 <li>Add to the set of wonders <span class="cities">Byzantium, Petra, </span><span class="armada">Siracusa, </span><span class="leaders">Rome, Abu Simbel, </span><span class="edifice">Ur, </span>to the set of wonders. </li>
-<li>Each player selects or randomly gets a Wonder Board. Choose or select randomly <span class="1e">an A </span><span class="2e">a day </span>or <span class="1e">B </span><span class="2e">night </span> side. </li>
+<li>Each player selects or randomly gets a Wonder Board. Choose or select randomly <span class="Ed1">an A </span><span class="Ed2">a day </span>or <span class="Ed1">B </span><span class="Ed2">night </span> side. </li>
 <li>Each player gets <span class="no-leaders">3 </span><span class="leaders">6 </span>coins from the bank. </li>
 <li class="babel tower">Place the base of the Babel Tower depending on the number of players (2-4 players, 3 placeholders; 5-8 players, 4 placeholders). </li>
 <li class="babel tower">Deal 3 random Babel tiles in front of them, face down. </li>
@@ -603,15 +603,14 @@ You can:
     <li>Construct the card <strong>as long as it's not already existing in your city</strong>:
         <ul>
         <li>Pay the cost shown on the card and place it, face up, behind your wonder. Resources must com from you or your neighbors. Each resource costs 2 coins. </li>
-        <li><span class="armada babel">
-        Choose between:
+        <li><span class="armada babel greatprojects">Choose between:</span>
             <ul>
             <li class="armada"> If the card color matches Red, Yellow, Blue, or Green, you may pay the cost and move the corresponding boat on your shipyard board and apply the corresponding effect. If the effect is exploring an island, if you are the only one exploring that level's island, draw 4 cards and choose one to keep, returning the rest to the deck and shuffle. If multiple players are exploring the same level's island, they are dealt evenly all the cards from that level in the island deck, returning those cards that cannot be dealt. Each player choose which island to explore and return the rest to the deck, and shuffle. Place the island card under the Shipyard board on the corresponding space, leaving visible only the benefit granted. </li>
             <li class="babel greatprojects">If the card you constructed matches the color of the active Great Project, and there are available participation to-kens on the Great Project card, you can participate in its construction paying the Participation Cost. If you choose to do so, take a participation token and place it on your Wonder Board. </li>
             </ul>
-        </li></ul>
-    <li><p>Construct a stage of your wonder:</p>
-        <p>Construct your wonder in order. <span class="armada">Siracusa stages can be built in any order. </span><span class="wonderpack">The Great Wall stages can be built in any order. </span></p>
+        </li>
+    <li>Construct a stage of your wonder:
+        Construct the next stage of your wonder in order. <span class="siracusa">Siracusa stages can be built in any order. </span><span class="wonderpack">The Great Wall stages can be built in any order. </span>
         <ul>
         <li>Turn the card face down and pay the cost shown on the wonder space it is being used for. Place the upside-down card on the bottom of the wonder under the stage you have built. <span class="edifice">Once per age, when you construct a stage of your wonder you can participate in the construction in the current age's edifice. Pay the cost of your wonder stage and the project cost at the same time, then take a participation pawn from the card. If multiple players contribute on the same turn, take extra pawns from the box if needed. If all pawns are taken from the edifice card, then it is constructed. Flip the card over and anyone with a participation pawn immediately gains the reward shown on the card. <span class="armada">You cannot move a ship forward <strong>and </strong>contribute to a project on the same turn</span></span><span class="armada">Move a boat on your shipyard board on the column with the wonder symbol<span class="edifice"> only if you didn't participate in the edifice construction this turn</span>. </span></li></ul>        
     <li>Sell the card:
@@ -624,7 +623,7 @@ You can:
         <li>The effects of the Babel Tower tiles apply to all players as long as they are not covered by another Babel Tower tile. </li></ul>
     </li>
 </li>
-Continue until you have 2 cards in your hand. If that's the case, discard one, and play the other one.
+<p>Continue until you have 2 cards in your hand. If that's the case, discard one, and play the other one.</p>
 
 #### Turn Resolution
 The turn is always resolved in this order
