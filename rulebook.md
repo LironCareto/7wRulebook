@@ -265,11 +265,20 @@ $(function () {
 <form id="configform" style="display: none;">
   <fieldset id="configbox">
     <legend>Configuration:</legend>
-      <label><input type="radio" name="edition" id="Ed1" checked> 1st Edition</label>
-      <label><input type="radio" name="edition" id="Ed2"> 2nd Edition</label>
+    <label><input type="radio" name="edition" id="Ed1" checked> 1st Edition</label>
+    <label><input type="radio" name="edition" id="Ed2"> 2nd Edition</label>
     <hr>
+    <legend>Wonders</legend>
     <label><input type="checkbox" name="wonderpack" id="wonderpack"> Wonder Pack</label><br>
     <label><input type="checkbox" name="catan" id="catan"> Catan Wonder</label><br>
+    <hr>
+    <legend>Leaders</legend>
+    <label><input type="checkbox" name="esteban" id="esteban"></label>
+    <label><input type="checkbox" name="linus" id="linus"></label>
+    <label><input type="checkbox" name="louis" id="louis"></label>
+    <label><input type="checkbox" name="nimrod" id="nimrod"></label>
+    <label><input type="checkbox" name="stevie" id="stevie"></label>
+    <label><input type="checkbox" name="wil" id="wil"></label> 
     <hr>
     <label><input type="checkbox" name="leaders" id="leaders"> Leaders</label><br>
     <div style="margin-left: 20px" class="leaders">
