@@ -272,17 +272,15 @@ $(function () {
     <label><input type="checkbox" name="wonderpack" id="wonderpack"> Wonder Pack</label><br>
     <label><input type="checkbox" name="catan" id="catan"> Catan Wonder</label><br>
     <hr>
-    <legend>Leaders</legend>
-    <label><input type="checkbox" name="esteban" id="esteban"></label>
-    <label><input type="checkbox" name="linus" id="linus"></label>
-    <label><input type="checkbox" name="louis" id="louis"></label>
-    <label><input type="checkbox" name="nimrod" id="nimrod"></label>
-    <label><input type="checkbox" name="stevie" id="stevie"></label>
-    <label><input type="checkbox" name="wil" id="wil"></label> 
-    <hr>
     <label><input type="checkbox" name="leaders" id="leaders"> Leaders</label><br>
     <div style="margin-left: 20px" class="leaders">
-        <label><input type="checkbox" name="leaders-anniversary" id="leaders-anniversary">Leaders Anniversary Pack</label>
+        <label><input type="checkbox" name="leaders-anniversary" id="leaders-anniversary">Leaders Anniversary Pack</label>        
+        <label><input type="checkbox" name="esteban" id="esteban">Esteban</label>
+        <label><input type="checkbox" name="linus" id="linus">Linus</label>
+        <label><input type="checkbox" name="louis" id="louis">Louis</label>
+        <label><input type="checkbox" name="nimrod" id="nimrod">Nimrod</label>
+        <label><input type="checkbox" name="stevie" id="stevie">Stevie</label>
+        <label><input type="checkbox" name="wil" id="wil">Wil</label> 
     </div>
     <label><input type="checkbox" name="cities" id="cities"> Cities</label><br>
     <div style="margin-left: 20px" class="cities">
@@ -370,7 +368,7 @@ $(function () {
 	<li class="armada">Resolve Naval conflicts. Award bonus and penalty tokens. The comparison is done among all players. The weakest Naval Strength gets a penalty bonus, then the strongest, second and third get the corresponding bonuses, in that order. 
   <div markdown="1">
   |  Age  | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
-  |:-----:|:-------:|:---------:|:------------- |:-------------:|
+  |:-----:|:-------:|:---------:|:-------------:|:-------------:|
   |  I    |    -1   |     3     |       1       |               |
   |  II   |    -2   |     5     |       3       |               |
   |  III  |    -3   |     7     |       5       |       3       |
@@ -379,3 +377,13 @@ $(function () {
 	</li>
 </ol>
 <p>Each Guild Card is limited to a maximum of 10 points. </p>
+
+If multiple players take cards from the discard pile during a single turn, the resolution order is:
+<ol>
+  <li>Halikarnassos</li>
+  <li class="wonderpack">The Great Wall</li>
+  <li class="wonderpack">Manneken Pis</li>
+  <li class="leaders">Solomon</li>
+  <li class="cities">Counterfeiter's Office</li>
+  <li>Courtesans Guild</li>
+</ol>
