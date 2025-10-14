@@ -367,11 +367,11 @@ $(function () {
   </li>
 	<li class="armada">Resolve Naval conflicts. Award bonus and penalty tokens. The comparison is done among all players. The weakest Naval Strength gets a penalty bonus, then the strongest, second and third get the corresponding bonuses, in that order. 
   <div markdown="1">
-  |  Age  | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
-  |:-----:|:-------:|:---------:|:-------------:|:-------------:|
-  |  I    |    -1   |     3     |       1       |               |
-  |  II   |    -2   |     5     |       3       |               |
-  |  III  |    -3   |     7     |       5       |       3       |
+  | Age | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
+  |:---:|:---:|:---:|:---:|:---:|
+  | I | -1 | 3 | 1 | |
+  | II | -2 | 5 | 3 | |
+  | III | -3 | 7 | 5 | 3 |
   </div>
   <p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
 	</li>
