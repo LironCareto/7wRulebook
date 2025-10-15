@@ -344,6 +344,11 @@ $(function () {
 {% include toc.html %}
 
 ## Introduction
+<p>7 Wonders is a game for 3 to <span>7</span><span>8</span> players</p>
+<p>The game takes place over 3 Ages, each one using one card of the 3 decks (first the Age I, then Age II, and finally Age III). </p>
+<p>These Ages are played similarity, which each player having the opportunity to play <span class="no-cities">6</span><span class="cities">7</span> cards per Age to develop his or her city and build their Wonder. </p>
+<p>At the end of each Age, each player compares their <span class="no-armada">military with their left and right neighbors</span><span class="armada">army and navy with other players</span>. </p>
+<p>At the end of the third Age, the players count their victory points; the player with the most points wins the game. </p>
 
 ## The basics
 
