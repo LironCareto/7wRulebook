@@ -348,6 +348,42 @@ $(function () {
 ## The basics
 
 ## Game setup
+<p>Prepare a spacious table. </p>
+
+<ol>
+    <li>Separate the Age cards into the three Age decks. </li>
+    <li>Discard the cards that show a player count above the number of players. </li>
+    <li class="cities">Separate the Black cards into the three Age decks and shuffle each. </li>
+    <li class="cities">For each age add as many black cards as there are players. </li>
+    <li>Shuffle all the purple (Guild) cards and draw the <em>number of players + 2 </em>and add them to the Age III deck. </li>
+    <li class="armada">Separate the Armada Age cards into the three age decks and shuffle each. </li>
+    <li class="armada">For each age, add as many Armada cards as there are players. </li>
+    <li>Add to the set of wonders <span class="cities">Byzantium, Petra, </span><span class="armada">Siracusa, </span><span class="leaders">Rome, Abu Simbel, </span><span class="edifice">Ur, </span>to the set of wonders. </li>
+    <li>Each player selects or randomly gets a Wonder Board. Choose or select randomly <span class="Ed1">an A </span><span class="Ed2">a day </span>or <span class="Ed1">B </span><span class="Ed2">night </span> side. </li>
+    <li>Each player gets <span class="no-leaders">3 </span><span class="leaders">6 </span>coins from the bank. </li>
+    <li class="babel tower">Place the base of the Babel Tower depending on the number of players (2-4 players, 3 placeholders; 5-8 players, 4 placeholders). </li>
+    <li class="babel tower">Deal 3 random Babel tiles in front of them, face down. </li>
+    <li class="babel tower">Secretly choose one tile, place it down in front of you and pass the remaining to the player on your right. </li>
+    <li class="babel tower">Repeat until each player receives the last tile from the player to the left and each player has 3 tiles in their pile. </li>
+    <li class="leaders">Deal 4 random leader cards to each player</li>
+    <li class="leaders">Secretly choose one leader card and place it face down in front of you. </li>
+    <li class="leaders">Pass the rest of the cards to the person on your right. </li>
+    <li class="leaders">Repeat until all the cards are used, so each person has a leader card in hand, which is discarded. </li>
+    <li class="armada">Each player gets a shipyard board and a boat of each color. </li>
+    <li class="armada">The island cards are added to the table in separate piles for each level. </li>
+    <li class="edifice">Separate the Edifice cards into the three Ages, shuffle them and place one random card per Age, project face up, in the middle of the table. </li>
+    <li class="edifice">Put the number of participation pawns the card depending on the number of players.
+        <div markdown="1">
+        | Players | Pawns |
+        |   ---   |  ---  |
+        | 3       | 2     |
+        | 4       | 3     |
+        | 5       | 3     |
+        | 6       | 4     |
+        | 7       | 5     |
+        </div>
+    </li>
+</ol>
 
 ## Turn order
 
@@ -368,10 +404,10 @@ $(function () {
 	<li class="armada">Resolve Naval conflicts. Award bonus and penalty tokens. The comparison is done among all players. The weakest Naval Strength gets a penalty bonus, then the strongest, second and third get the corresponding bonuses, in that order. 
   <div markdown="1">
   | Age | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
-  |:---:|:---:|:---:|:---:|:---:|
-  | I | -1 | 3 | 1 | |
-  | II | -2 | 5 | 3 | |
-  | III | -3 | 7 | 5 | 3 |
+  |:---:|  :---:  |   :---:   |     :---:     |     :---:     |
+  | I   | -1      | 3         | 1             |               |
+  | II  | -2      | 5         | 3             |               |
+  | III | -3      | 7         | 5             | 3             |
   </div>
   <p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
 	</li>
