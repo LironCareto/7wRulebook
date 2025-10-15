@@ -407,9 +407,9 @@ $(function () {
   <p>In case of a tie for the weakest, both players take a Naval Defeat token. In case of a tie for the strongest, both players take the reward of the next rank, and the second goes down to the third rank. In case of a tie in second strongest, both players go down to third rank and the player(s) in third position get no bonus tokens.</p>
 	</li>
 </ol>
-<p>Each Guild Card is limited to a maximum of 10 points. </p>
+<p>Each Guild Card is limited to provide a maximum of 10 points. </p>
 
-If multiple players take cards from the discard pile during a single turn, the resolution order is:
+<p>If multiple players take cards from the discard pile during a single turn, the resolution order is:</p>
 <ol>
   <li>Halikarnassos</li>
   <li class="wonderpack">The Great Wall</li>
@@ -418,3 +418,9 @@ If multiple players take cards from the discard pile during a single turn, the r
   <li class="cities">Counterfeiter's Office</li>
   <li>Courtesans Guild</li>
 </ol>
+
+  | Age | Weakest | Strongest | 2nd Strongest | 3rd Strongest |
+  |:---:|  :---:  |   :---:   |     :---:     |     :---:     |
+  | I   | -1      | 3         | 1             |               |
+  | II  | -2      | 5         | 3             |               |
+  | III | -3      | 7         | 5             | 3             |
