@@ -377,17 +377,7 @@ $(function () {
     <li class="armada">Each player gets a shipyard board and a boat of each color. </li>
     <li class="armada">The island cards are added to the table in separate piles for each level. </li>
     <li class="edifice">Separate the Edifice cards into the three Ages, shuffle them and place one random card per Age, project face up, in the middle of the table. </li>
-    <li class="edifice">Put the number of participation pawns the card depending on the number of players.
-        <div markdown="1">
-        | Players | Pawns |
-        |   ---   |  ---  |
-        | 3       | 2     |
-        | 4       | 3     |
-        | 5       | 3     |
-        | 6       | 4     |
-        | 7       | 5     |
-        </div>
-    </li>
+    <li class="edifice">Put the number of participation pawns the card depending on the number of players. </li>
 </ol>
 
 ## Turn order
